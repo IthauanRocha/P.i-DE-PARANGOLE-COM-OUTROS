@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Suporte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adicione margens às divs para criar espaço entre elas */
+        .nav {
+            margin-bottom: 25px; /* Espaço após a div .nav */
+        }
+
+        .form-box {
+            margin-top: 25px; /* Espaço antes da div .form-box */
+        }
+
+        .input-box {
+            margin-bottom: 20px; /* Espaço após cada div .input-box */
+        }
+        /* style.css */
+        /* ... Outros estilos ... */
+
+        /* Estilo para dar mais espaço à caixa de mensagem */
+        .input-box textarea {
+            height: 150px; /* Aumenta a altura da caixa de mensagem */
+            width: 380px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.php" class="link">Inicio</a></li>
+                    <li><a href="sobre.html" class="link">Sobre</a></li>
+                    <li><a href="novidades_em_breve.html" class="link">Não definido</a></li>
+                    <li><a href="suporte.html" class="link active">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+            </div>
+        </nav>
+        <div class="form-box">
+            <div class="form-container" id="login">
+                <header>Fale Conosco</header>
+                <form action="https://formsubmit.co/tataurocha20@hotmail.com" method="POST" class="form">
+                    <div class="input-box">
+                        <input type="text" id="nome" class="input-field" placeholder="Digite seu nome" name="nome" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="matricula" class="input-field" placeholder="Digite sua matrícula" name="matricula" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" class="input-field" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea id="mensagem" class="input-field" name="mensagem" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://localhost/codigos/PROJETO_PI_NOVO">
+                    <input type="submit" class="submit" data-button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .image-links {
+            position: absolute;
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+
+        .image-links a {
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .image-links img {
+            max-width: 100px;
+        }
+        
+    </style>    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.php" class="link">Início</a></li>
+                    <li><a href="sobre.html" class="link active">Sobre</a></li>
+                    <li><a href="novidades_em_breve.html" class="link">Não definido</a></li>
+                    <li><a href="suporte.html" class="link">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+            </div>
+        </nav>
+
+        <div class="content">
+            <header>Sobre</header>
+            <p>Site desenvolvido por estudandes do IFBA com a finalidade de facilitar o processo de requerimentos de alunos em nosso instituto federal. 
+                Nosso objetivo é fornecer uma plataforma eficiente e amigável para ajudar os alunos a enviar seus requerimentos de forma conveniente.</p>
+            <p><br>Se você tiver alguma dúvida ou quiser saber mais sobre nossos produtos e serviços, não hesite em entrar em contato conosco. Basta ir na opção de<a href="suporte.html"> fale conosco</a> e preencha seus dados.</p>
+        </div>
+
+        <div class="image-links"><!-- div imagens com link -->
+            <a href="https://suap.ifba.edu.br/" target="_blank"><img src="suap.jpg"></a>
+            <a href="https://ava.ifba.edu.br/" target="_blank"><img src="moodle.jfif"></a>
+            <a href="https://portal.ifba.edu.br/" target="_blank"><img src="if.jpg"></a>
+        </div>
+    </div>
+</body>
+</html>
